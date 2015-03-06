@@ -272,7 +272,7 @@ class PlgSystemLanguageFilter extends JPlugin
 				}
 			}
 		}
-		else
+		if (empty($lang_code))
 		{
 			// We are not in SEF mode
 			$lang = $uri->getVar('lang');
